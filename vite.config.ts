@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/elitecup/",   // 👈 AGREGAR ESTA LÍNEA
+  base: "/elitecup/",   
 
   server: {
     host: "::",
