@@ -7,7 +7,7 @@ Nombre del estudiante: Eduard Alfonzo Morillo Fierro
 
 Fecha: 28 de febrero de 2026
 
-Curso: Desarrollo Web
+Curso: Plataformas tecnologicas
 
 2️⃣ Descripción del Proyecto
 ¿Qué hace el proyecto?
@@ -42,7 +42,6 @@ Tailwind CSS
 
 Vite
 
-Node.js
 
 Git
 
