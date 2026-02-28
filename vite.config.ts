@@ -13,7 +13,6 @@ export default defineConfig(({ mode }) => ({
     },
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
-  base: 'https://eduardmorillo79-svg/elitecup',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
