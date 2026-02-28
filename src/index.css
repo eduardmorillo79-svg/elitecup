@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 6%;
+    --foreground: 45 30% 92%;
+
+    --card: 222 40% 10%;
+    --card-foreground: 45 30% 92%;
+
+    --popover: 222 40% 10%;
+    --popover-foreground: 45 30% 92%;
+
+    --primary: 45 80% 50%;
+    --primary-foreground: 222 47% 6%;
+
+    --secondary: 215 60% 22%;
+    --secondary-foreground: 45 30% 92%;
+
+    --muted: 222 30% 14%;
+    --muted-foreground: 215 20% 55%;
+
+    --accent: 45 80% 50%;
+    --accent-foreground: 222 47% 6%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 222 30% 18%;
+    --input: 222 30% 18%;
+    --ring: 45 80% 50%;
+
+    --radius: 0.5rem;
+
+    --gold: 45 80% 50%;
+    --gold-light: 45 70% 65%;
+    --gold-dark: 45 90% 35%;
+    --navy: 222 47% 6%;
+    --navy-light: 215 60% 22%;
+    --navy-medium: 222 40% 10%;
+
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --gradient-gold: linear-gradient(135deg, hsl(45 80% 50%), hsl(40 90% 60%), hsl(45 80% 50%));
+    --gradient-dark: linear-gradient(180deg, hsl(222 47% 6%), hsl(222 40% 10%));
+    --gradient-card: linear-gradient(145deg, hsl(222 40% 12%), hsl(222 40% 8%));
+    --shadow-gold: 0 0 30px hsl(45 80% 50% / 0.15);
+    --shadow-card: 0 10px 40px hsl(222 47% 3% / 0.5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: 0.04em;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-gold {
+    background: var(--gradient-gold);
+  }
+
+  .bg-gradient-dark {
+    background: var(--gradient-dark);
+  }
+
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .shadow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+}
